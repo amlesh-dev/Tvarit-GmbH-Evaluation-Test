@@ -12,6 +12,7 @@ python app.py 1 2 a   All inputs must be numeric'''
 
 
 
+import unittest
 def fix_teen(num):
   if num >12 and num <20 and not num ==15 and not num ==16:
     return 0
@@ -19,4 +20,7 @@ def fix_teen(num):
     return num
 
 def no_teen_sum(a, b, c):
-    fix_teen(a) + fix_teen(b)+fix_teen(c)
+    print(fix_teen(a) + fix_teen(b)+fix_teen(c))
+    
+if __name__ == '__main__':
+	unittest.main()
