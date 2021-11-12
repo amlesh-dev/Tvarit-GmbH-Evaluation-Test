@@ -1,0 +1,8 @@
+def fix_teen(num):
+  if num >12 and num <20 and not num ==15 and not num ==16:
+    return 0
+  else:
+    return num
+
+def no_teen_sum(a, b, c):
+    print(fix_teen(a) + fix_teen(b)+fix_teen(c))
