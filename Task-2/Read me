@@ -1,0 +1,15 @@
+Convert the script from task 1 to a REST API that accepts json input and returns json output
+with appropriate error handling
+Examples
+Replace {INPUT} in the curl command below with inputs in the table
+curl -H 'Content-Type: application/json' -X PUT -d '{INPUT}’ http://localhost:5000/sum
+Input            Output
+[1,2,3]   {“status”: 200, “result”: 6}
+[2,13,1]  {“status”: 200, “result”: 3}
+[2,1,14]  {“status”: 200, “result”: 3}
+[2,1,15]  {“status”: 200, “result”: 18}
+[1,2]     {“status”: 400, “error”: “Exactly 3 numbers are required”}
+[1,2,”a”]  {“status”: 400, “error”: “All inputs must be numeric”}
+
+
+
