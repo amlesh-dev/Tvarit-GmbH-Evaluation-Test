@@ -10,3 +10,6 @@ python app.py 2 1 14      3
 python app.py 2 1 15      18
 python app.py 1 2      Exactly 3 numbers are required
 python app.py 1 2 a     All inputs must be numeric
+
+
+Run "python Test.py"
